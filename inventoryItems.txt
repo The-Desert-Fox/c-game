@@ -1,0 +1,6 @@
+1
+key
+A_rusty_old_key
+2
+red_key
+made_of_silver
