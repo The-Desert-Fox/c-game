@@ -1,8 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "countInventory.h"
 #include "playersInventory.h"
+#include "countInventory.h"
+#include "listInventory.h"
 using namespace std;
 
 int main(){
@@ -19,17 +20,3 @@ int main(){
 		playersInventory();
 	}
 }
-//string listInventory(){
-//  ifstream textfile1;
-//  textfile1.open("inventoryItems.txt");
-//  int count = countInventory();
-
-//  for(int i=0; i<count; ++i){
-//    textfile1 >> Items.at(i).inventoryItemID >> Items.at(i).inventoryItemName >> Items.at(i).inventoryItemDescription;
-//    cout << i.inventoryItemID << ", "
-//         << i.inventoryItemName << ", "
-//         << i.inventoryItemDescription << endl;
-//  }
-//   textfile1.close();
-//   return "";
-//}
