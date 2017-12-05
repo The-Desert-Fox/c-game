@@ -1,3 +1,0 @@
-#include <string>
-
-void listInventory();
