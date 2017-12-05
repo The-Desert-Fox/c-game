@@ -1,5 +1,5 @@
 #include <string>
-#include "countInventory.h"
+#include "inventoryHelper.h"
 using namespace std;
 
 void playersInventory();

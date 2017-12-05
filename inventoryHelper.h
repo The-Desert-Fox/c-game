@@ -1,0 +1,2 @@
+void listInventory();
+int countInventory();
