@@ -9,6 +9,8 @@
 
 int main(){
   string textfile1 = "inventroyItems.txt";
+  vector<Item> inventory;
+  vector<Room> rooms;
   int count = countInventory();
   ++count;
 
