@@ -1,13 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <algorithm>
 #include "playersInventory.h"
 #include "inventoryHelper.h"
 using namespace std;
 
 void playersInventory(){
   ifstream textfile1;
-  textfile1.open("inventoryItems.txt");
+  // textfile1.open("inventoryItems.txt");
   // Count's the amount of items in the players inventory
 
   int count = countInventory();
@@ -22,7 +23,10 @@ void playersInventory(){
   cout << "Enter Here : ";
 	cin >> choice;
 
-  if(choice == "list" || choice == "List" || choice == "LIST")
+  // Converting input data to lower case
+  std::transform(choice.begin(), choice.end(),choice.begin() , ::tolower);
+
+  if(choice == "list")
   {
     ret = "Your Inventory consists of...";
     cout << ret << endl;
@@ -30,7 +34,7 @@ void playersInventory(){
   }
   // Use (itemName) || Examine (itemName) || Read (itemName)
   //USE POINTERS
-	else if(choice == "use" || choice == "Use" || choice == "USE")
+	else if(choice == "use")
   {
     ret = "you chose to type ";
     cout << ret << choice << endl;
@@ -40,7 +44,7 @@ void playersInventory(){
     //  cout << ret << endl;
     //}
 	}
-  else if(choice == "examine" || choice == "Examine" || choice == "EXAMINE")
+  else if(choice == "examine")
   {
     ret = "you chose to type ";
     cout << ret << choice << endl;

@@ -1,0 +1,5 @@
+Bedroom
+You wake up and you don't know where you are. You seem to be in a bedroom. You get out of bed and notice a key on the DRESSER.
+dresser
+1
+false
